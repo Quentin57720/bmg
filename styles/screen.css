@@ -1,0 +1,322 @@
+/* ------------------------------------------------------------- */
+/* éléments communs
+/* ------------------------------------------------------------- */
+
+h1, h2, h3 {
+    color: #4582B4;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.2em;
+    background: #e0e0e0;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1em;
+    background-color: #f1f2f4;
+    padding: 0.5em;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+a {
+    color: #4582B4;
+}
+
+a:hover {
+    color: #cd5c5c;
+}
+
+fieldset
+{
+    margin-bottom: 10px;
+    border: #CCC 1px solid;
+}
+
+fieldset legend
+{
+    padding: 0 10px 0 10px;
+    color: #666;
+}
+
+fieldset:hover
+{
+    border-color: #666;
+}
+
+label {
+    color: Gray;
+    width: 120px;
+}
+
+input[type=radio], input[type=text], input[type=password], 
+input[type=checkbox], input[type=date], select, option, textarea {
+    margin-left: 30px;
+}
+
+input[type=submit], input[type=reset] {
+    margin-top: 15px;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------- */
+/* structure du document
+/* ------------------------------------------------------------- */
+
+body {
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+nav {	
+    color: rgb(96, 96, 96);
+    float: left;
+    width: 270px;
+}
+
+footer {
+    clear: both;
+    margin: 25px 0 0 5px;
+    color: #6699cc;	
+}
+
+
+#main-header {
+    margin: 5px 0 25px 5px;
+}
+
+#page {
+    background-color:white;
+    width : 65%;
+    margin : auto ;
+    border : 0.2em solid black;
+    padding : 0.1em;
+}
+
+#content{
+    border: none;
+    padding-left: 1.3em;
+    background-color: white;
+    margin-left: 280px;	
+    /* permet de fixer une hauteur mini sur les navigateurs modernes */
+    min-height:27em;
+}
+
+#logo-accueil {    
+    margin: auto;    
+}
+
+.titre-entete {
+    font-weight: bold;
+    font-size: 2em;
+    color: #6699cc;
+}
+
+#titre-accueil {
+    float: left;
+    margin: 50px 100px 50px 50px;
+}
+
+.gro-titre {
+    display: block;
+    color: #6699cc;
+    font-size: 4em;
+    font-weight: 600;
+    text-align: left;
+    display: block;
+}
+
+#infos-util {
+    margin-bottom: 25px;
+}
+
+#left-menu {
+    padding: 1em;    
+    margin-bottom: 1em;
+    background-color: #f1f2f4;
+}
+
+/* style à appliquer à la balise ul d'identifiant menulist */
+ul#menu-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 98%;
+    font-size: 1em;
+}
+
+/* style à appliquer aux éléments de la balise ul d'identifiant menulist */
+ul#menu-list li {
+    position: relative;
+    margin: 0px;
+    padding:0px;
+}
+
+/* apparences des liens dans listes et sous-listes non numérotées */
+ul#menu-list a {
+    padding: 0.5em;
+    color: #4582B4;
+    display: block;
+    text-decoration: none;
+    width: 80%;
+}
+
+ul#menu-list a:hover {
+    background: #e0e0e0;
+    color: #4582B4;
+}
+
+#content pre {
+    width:95%;
+    overflow : scroll;
+}
+
+#content h2 {
+    font-size: large;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+#breadcrumb {
+    margin: 4px 0 14px 0;
+    padding-left: 3px;
+}
+
+.corps-form {
+    margin-top: 15px;
+}
+
+.pied-form {
+    text-align: left ;
+    margin-top: 0em;
+}
+
+
+label.form , label.formError{
+    display: block;
+    max-width: 160px;
+    float: left;
+    margin-left: 10px;
+}
+
+label.formError{
+    color: red;
+}
+
+label.radio {
+    display: inline;
+}
+
+label:hover {
+    color: #330066;
+}
+
+table.recap {
+    width: 66%;
+} 
+
+td.h-entete, td.h-valeur {
+    padding: 3px;
+}
+
+td.h-entete {
+    padding: 2px;
+    background-color: #e0e0e0;
+    color: #4582B4;
+    font-weight: bold;
+    width: 20%;
+}
+
+td.h-valeur {
+    background-color: #f0f0f0;
+    color: #4582B4;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.right, th.right {
+    text-align: right;
+    padding: 8px 8px 5px 0;
+}
+
+#object-list {
+    margin : 10px 0 10px 0;
+}
+
+#object-list th {
+    text-align: left;
+    background-color: #e0e0e0;
+    color: #4582B4;
+}
+
+#object-list tr.impair {
+    background-color: #f0f0f0;
+}
+
+#object-list tr.pair {
+    background-color: #fafafa;
+}
+
+#object-list td {
+    padding: 1px 5px 1px 2px;
+}
+
+#object-list select {
+    /*margin-left: 30px;*/
+    width: 250px;
+}
+
+#crud-buttons {
+    margin: 10px 0 0 0;
+}
+
+#crud-buttons input[type=submit] {
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+span.read-only {
+    margin-left: 30px;
+}
+
+#ok-cancel-buttons {
+    margin-left: 5px;
+}
+
+#ok-cancel-buttons input[type=submit] {
+    margin-left: 5px;
+}
+
+/* ------------------------------------------------------------- */
+/* classes sémantiques
+/* ------------------------------------------------------------- */
+
+span.erreur, span.info {
+    display: block;
+    width: 50%;
+    padding: 4px;
+    background-color: #fafafa;
+    margin: 5px 0 5px 0; 	
+}
+
+.erreur {
+    color: red;
+}
+
+.info {
+    color: #4582B4;
+}
+
+span.active {
+    color: #4582B4;
+    font-weight: bold;
+}
